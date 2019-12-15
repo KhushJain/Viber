@@ -1,3 +1,6 @@
+{% extends 'music/base.html' %}
+{% block title %}Album Details{% endblock %}
+{% block content %}
 <img src="{{album.album_logo}}">
 
 <h1>{{ album.album_title }}</h1>
@@ -8,3 +11,4 @@
     <li>{{ song.song_title }} - {{ song.file_type }}</li>
   {% endfor %}
 </ul>
+{% endblock %}

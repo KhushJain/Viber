@@ -1,3 +1,6 @@
+{% extends 'music/base.html' %}
+
+{% block content %}
 {% if all_album %}
   <h3>Here Are All The Albums:</h3>
   <ul>
@@ -8,3 +11,4 @@
 {% else %}
   <h3>You don't have any albums</h3>
 {% endif %}
+{% endblock %}
